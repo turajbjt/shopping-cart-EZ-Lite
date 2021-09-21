@@ -6,7 +6,7 @@ This Perl project is intended to be a somewhat drop-in replacement for that cart
 
 More detailed instructions are to come, but for now, here's a summery of what to do:
 - download & then decompress this ezlite.zip file into your site's web directory
-(for this example, I'll assume you'll put cart's files in a folder name 'ezlite' off the web root)
+(for this example, I'll assume you'll put the cart's files in a folder name 'ezlite' off the web root)
 - go into the cart's 'private' folder & edit the values within the ezlite.cfg file (chmod 644 the file)
 (it should be clear what goes where, but the xxxSOMETHINGxxx values are pretty much what you need to adjust)
 - ensure you have the required 'baskets' & 'logs' folders created wherever you've set them (chmod 777 the folders)
