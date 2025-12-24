@@ -1,0 +1,14 @@
+shipping 1.00 item
+tax 0.025 AL
+cardtype Visa Mastercard Discover
+header "ProductID","UnitPrice","Shipping","Description","taxable","weight","Instock","Category","Graphic","plan","descra","descrb","descrc","supplieremail","site","long_description","fulfillmap"
+"PAYG1H","35.00","0.00","Pay As You Go 1 Hr.","N"
+"PAYG2H","70.00","0.00","Pay As You Go 2 Hrs.","N"
+"SPLTY1H","50.00","0.00","Specialty Service 1 Hr.","N"
+"STRTR3H","100.00","0.00","Starter 3 Hrs.","N"
+"STRTR5H","170.00","0.00","Starter 5 Hrs.","N"
+"MEM20H","640.00","0.00","Membership: Premium 20 Hrs.","N"
+"MEM40H","1350.00","0.00","Membership: Elite 40 Hrs.","N"
+"MEM10H","340.00","0.00","Membership: Basic 10 Hrs.","N"
+"test2021","1.23","0.00","Test Product 2021","y"
+"TShirt1","5.00","0.00","Fancy T-Shirt","y","0.01","y","shirts","tshirt.png","","Color:Red,Blue,Green,White,Gray","Size:SM,M,L,XL,XXL","Style:Sold,Plaid,Strips,Checker","contact@xxxSomeDomainxxx","","Fancy Fun T-Shirt",""

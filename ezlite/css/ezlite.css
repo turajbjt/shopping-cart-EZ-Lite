@@ -1,0 +1,220 @@
+/*-----start-responsive-design------
+@media only screen and (max-width: 1366px) and (min-width: 1280px){
+  .wrap{
+    width:95%;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+  .wrap{
+    width:95%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .wrap{
+    width:95%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+  .wrap {
+    width:95%;
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .wrap {
+    width:95%;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 240px) {
+  .wrap{
+    width:95%;
+  }
+}
+*/
+
+/* -------------------------------------------------------------- */
+
+.column {
+  float: left;
+  display: inline-block;
+}
+
+.rowTitle {
+  background-color:#f3e4c1;
+  font-weight: 700;
+}
+
+.rowProduct {
+  background-color:#e3e3e3;
+}
+
+.rowSubtotal {
+  background-color:#f3e4c1;
+  font-weight: 700;
+}
+
+/* set checkout table column widths */
+.rowTitle span:first-child,
+.rowProduct span:first-child {
+  width: 85px;
+  text-align: left;
+  overflow: hidden;
+}
+.rowTitle span:nth-child(2),
+.rowProduct span:nth-child(2) {
+  width: 300px;
+  text-align: left;
+  overflow: hidden;
+}
+.rowTitle span:nth-child(3),
+.rowProduct span:nth-child(3) {
+  width: 50px;
+  text-align: right;
+} 
+.rowTitle span:nth-child(4),
+.rowProduct span:nth-child(4) {
+  width: 100px;
+  text-align: right;
+}
+.rowTitle span:last-child,
+.rowProduct span:last-child {
+  width: 35px;
+  text-align: right;
+  padding-left: 5px;
+}
+
+.rowSubtotal span:first-child {
+  width: 435px;
+  text-align: right;
+  /* background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%); */
+  padding-right: 0px;
+} 
+.rowSubtotal span:nth-child(2) {
+  width: 100px;
+  text-align: right;
+}
+.rowSubtotal span:last-child {
+  width: 35px;
+}
+
+
+/* set text titles here */
+.rowTitle span:first-child::after {
+  content: 'SKU';
+}
+.rowTitle span:nth-child(2)::after {
+  content: 'Product';
+}
+.rowTitle span:nth-child(3)::after {
+  content: 'Qty';
+}
+.rowTitle span:nth-child(4)::after {
+  content: 'Unit Price';
+}
+.rowTitle span:last-child::after {
+  content: ' ';
+}
+
+.rowSubtotal span:first-child::after {
+  content: 'Subtotal';
+}
+.rowSubtitle span:nth-child(2)::after {
+  content: '';
+}
+.rowSubtotal span:last-child::after {
+  content: '';
+}
+
+.continueButton::after {
+  content: 'Continue Shopping';
+}
+
+.deleteItemButton::after {
+  content: 'X';
+} 
+
+.emptyButton::after {
+  content: 'Empty Cart';
+}
+
+.paymentButton::after {
+  content: 'Pay For Order';
+}
+
+div.taxShipNotice {
+  clear: both;
+  display: block;  
+}
+
+.taxShipNotice::after {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-style: italic;
+  content: '* Applicable tax & shipping fees will be calculated upon checkout.';
+}
+
+.emptyBasketNotice::after {
+  content: 'Your shopping cart basket is empty...';
+} 
+
+/* Clear floats after the columns */
+.row:after,
+.rowTitle:after,
+.rowProduct:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.cartButton, .continueButton, .emptyButton, .paymentButton {
+  height: 45px;
+  line-height: 45px;
+  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background-size: 200%;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.4s ease-out 0s;
+  text-decoration: none;
+  margin: 12px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+}
+
+.deleteItemButton {
+  height: 20px;
+  line-height: 20px;
+  background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background-size: 200%;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0 8px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.4s ease-out 0s;
+  text-decoration: none;
+  margin: 2px 7px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+}
+

@@ -1,0 +1,8 @@
+# setup basic authentcation
+AuthType Basic
+AuthName "EZ Lite Admin"
+AuthUserFile .htpasswd
+AuthName "EZ Lite Admin"
+<Limit POST GET>
+require valid-user
+</Limit>

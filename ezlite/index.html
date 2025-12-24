@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>EZ Lite Shopping Cart</title>
+<link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300' rel='stylesheet' type='text/css'>
+<link href='/css/style.css' rel='stylesheet' type='text/css' />
+<link href='/css/ezlite.css' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+<header class='center'>
+  <!--div style='text-align:right; float:left; display:inline-block;'><a class='cartButton' href='/'>Order Form</a></div-->
+  <div style='text-align:right; float:right; display:inline-block;'><a class='cartButton' href='/ezlite/index.cgi?function=checkout'>View Cart</a></div>
+</header>
+
+<div class='content'>
+  <div class='wrap'>
+<!--
+    <div class='content-grid'>
+      <p><img src='/images/top.png' title=''></p>
+    </div>
+-->
+    <div class='grid'>
+      <p><img src='/images/Logo_Base_clear.png' title='EZ Lite'></p>
+      <h3 class='title'>An EasyCart shopping cart clone.</h3>
+      <h2 class='subtitle'>Simplified replacement for PlugnPay's EasyCart shopping cart.</h2>
+      <div id='response' class='center'>
+
+<!-- begin cart order forms here -->
+<h1 class='title'>Order Form Examples</h1>
+
+<hr>
+
+<h2 class='title'>Single Product</h2>
+
+<h4>Test Product 2021</h4>
+Cost: $1.23<p>
+
+<form method=post action='/ezlite/index.cgi'>
+<input type=hidden name='function' value='add'>
+<input type=hidden name='item1' value='test2021'>
+<input type=input size=2 name='quantity1'> <strong>Qty.</strong>
+<p><input type=submit class='cartButton' value='Add to Shopping Cart'>
+</form>
+
+<hr>
+
+<h2 class='title'>Multiple Products</h2>
+
+<form method=post action='/ezlite/index.cgi'>
+<input type=hidden name='username' value='jamestu2'>
+<input type=hidden name='function' value='add'>
+
+<input type=hidden name='item1' value='PAYG1H'>
+<p>$35.00 - Pay As You Go 1 Hr.
+<br><input type=input size=2 name='quantity1'> <strong>Qty.</strong>
+
+<input type=hidden name='item2' value='PAYG2H'>
+<p>$70.00 - Pay As You Go 2 Hrs.
+<br><input type=input size=2 name='quantity2'> <strong>Qty.</strong>
+
+<input type=hidden name='item3' value='SPLTY1H'>
+<p>$50.00 - Specialty Service 1 Hr.
+<br><input type=input size=2 name='quantity3'> <strong>Qty.</strong>
+
+<input type=hidden name='item4' value='STRTR3H'>
+<p>$100.00 - Starter 3 Hrs.
+<br><input type=input size=2 name='quantity4'> <strong>Qty.</strong>
+
+<input type=hidden name='item5' value='STRTR5H'>
+<p>$170.00 - Starter 5 Hrs.
+<br><input type=input size=2 name='quantity5'> <strong>Qty.</strong>
+
+<input type=hidden name='item6' value='MEM40H'>
+<p>$1350.00 - Membership: Elite 40 Hrs.
+<br><input type=input size=2 name='quantity6'> <strong>Qty.</strong>
+
+<input type=hidden name='item7' value='MEM20H'>
+<p>$640.00 - Membership: Premium 20 Hrs.
+<br><input type=input size=2 name='quantity7'> <strong>Qty.</strong>
+
+<input type=hidden name='item8' value='MEM10H'>
+<p>$340.00 - Membership: Basic 10 Hrs.
+<br><input type=input size=2 name='quantity8'> <strong>Qty.</strong>
+
+<p><input type=submit class='cartButton' name='submit' value='Add to Shopping Cart'>
+</form>
+
+<hr>
+
+<h2 class='title'>Single Product w/Options</h2>
+
+<h4>Fancy T-Shirt 2021</h4>
+Cost: $5.00<p>
+
+<form method=post action='/ezlite/index.cgi'>
+<input type=hidden name='function' value='add'>
+<input type=hidden name='item1' value='TShirt1'>
+<br>Color: <select name='descra1'>
+<option>Red</option>
+<option>Blue</option>
+<option>Green</option>
+<option>White</option>
+<option>Gray</option>
+</select>
+
+&nbsp; Size: <select name='descrb1'>
+<option>SM</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+<option>XXL</option>
+</select>
+
+&nbsp; Style: <select name='descrc1'>
+<option>Solid</option>
+<option>Plaid</option>
+<option>Strips</option>
+<option>Checker</option>
+</select>
+
+&nbsp;<strong>Qty:</strong> <input type=input size=2 name='quantity1'>
+<p><input type=submit class='cartButton' value='Add to Shopping Cart'>
+</form>
+
+
+
+<!-- end cart order forms here -->
+
+      </div>
+      <div class='clear'></div>
+    </div>
+    <div class='clear'></div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; <script>document.write(new Date().getFullYear())</script> EZ Lite Shopping Cart, All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
